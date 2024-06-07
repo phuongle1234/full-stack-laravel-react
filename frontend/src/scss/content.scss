@@ -1,0 +1,154 @@
+.modalLoading{
+    background: none !important;
+    border: none !important;
+    .modal-body{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    width: 130px;
+    aspect-ratio: 1;
+    border: 15px solid #ddd;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(45deg);
+  }
+  .loader::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-radius: 50%;
+    border: 15px solid #514b82;
+    animation: l18 2s infinite linear;
+  }
+  @keyframes l18 {
+      0%   {clip-path:polygon(50% 50%,0 0,0    0,0    0   ,0    0   ,0    0   )}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0   ,100% 0   ,100% 0   )}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    0   )}
+  }
+
+.content {
+    padding-top: 5%;
+    .sroll{
+        height: calc(100vh - 270px);
+        overflow: scroll;
+    }
+}
+
+.dflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    span {
+        padding: 5px;
+    }
+}
+
+.sub {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    
+    dl {
+        
+        height: 44px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        margin: 0px;
+        border-top: 1px solid #cdd5e5;
+       
+        dt {
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            align-content: center;
+            justify-content: start;
+            font-weight: unset;
+            flex-wrap: wrap;
+        }
+
+        dd{
+            height: 100%;
+            display: flex;
+            align-content: center;
+            justify-content: end;
+            font-weight: unset;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.pagination{
+    padding: 20px 0px;
+    justify-content: end;
+}
+
+.table tbody tr td {
+    width: 100%;
+    padding: 5px 20px;
+}
+
+table {
+    th, td {
+        padding-left: 30px !important;
+    }
+    button {
+        border: none;
+        background: none;
+    }
+}
+
+.container .row-body {
+    border: 1px solid #eee;
+    box-shadow: 2px 3px 1px #eee;
+    padding: 10px 20px;
+}
+
+.form-group{
+    margin: 0px 5px 50px;
+    select, input, textarea{
+        border: none;
+        border-bottom: 1px solid #eee;
+        border-radius: 0px;
+    }
+}
+
+.hide{
+    display: none;
+}
+
+.flexContent{
+    padding: 5px 0px;
+}
+
+.btnS 
+{
+    border-radius: 113px !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
